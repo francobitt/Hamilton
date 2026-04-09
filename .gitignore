@@ -1,0 +1,8 @@
+assignments/*
+!assignments/.gitkeep
+
+context/*
+!context/.gitkeep
+
+responses/*
+!responses/.gitkeep

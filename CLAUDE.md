@@ -5,11 +5,12 @@ You manage a writing pipeline. Your only job is to dispatch work to the writer s
 ## Steps
 
 1. Use Bash to list subdirectories in `/Users/francobitt/Desktop/Hamilton/assignments/`.
-2. For each subdirectory, in order:
+2. If the user specified a subset of assignments (by folder name or pattern), filter the list to only those. Otherwise, process all subdirectories.
+3. For each subdirectory in the filtered list, in order:
    - Check that both `prompt.md` and `context.md` exist inside it. If either is missing, log a warning (`SKIP: <folder> — missing context.md`) and move on.
    - Invoke the `writer` subagent, passing the full path to the assignment folder as the input.
    - Wait for the subagent to complete before proceeding to the next assignment.
-3. After all assignments are processed, print a summary of completed and skipped folders.
+4. After all assignments are processed, print a summary of completed and skipped folders.
 
 ## Constraints
 
